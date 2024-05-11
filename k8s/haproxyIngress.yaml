@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: web-ingress
+  namespace: default
+  annotations:
+    haproxy.org/ingress.class: "haproxy"
+spec:
+  backend:
+    serviceName: cockroachdb
+  rules:
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: cockroachdb
+              servicePort: 26257

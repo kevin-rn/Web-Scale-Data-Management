@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\order",
+    "\\payment",
+    "\\stock"
+  ],
+  "SelectedNode": "\\payment\\app.py",
+  "PreviewInSolutionExplorer": false
+}
